@@ -1,0 +1,181 @@
+/* PC、スマホ共通スタイル */
+#logo-top {
+    float: left;
+    top: 0;
+    bottom: 20px;
+}
+#main-visual > img {
+    width: 100%;
+    height: auto;
+}
+h2 {
+    font-weight: bold;
+    background-color: yellow;
+}
+footer {
+    background-color: #8f7b72;
+}
+#sns-icon {
+    display: flex;
+}
+footer li {
+    list-style: none;
+}
+/*携帯*/
+    header {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    body {
+        margin: 0;
+        color: #666961;
+        font-family: "セザンヌ";  /*あと1-2フォント*/
+        text-align: center;
+        font-size: 18px;
+    }  
+    #nav-pc {
+        display: none;
+    }
+    #nav-sp li {
+        list-style: none;
+    }
+    #menu-sp {
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        z-index: 100;
+    }
+    #nav-sp {
+        background-color: #ce933e;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+        z-index: 100;
+    }
+    #nav-sp > a {
+        display: block;
+    }
+    #close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    #nav-sp .menu {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 44px;
+        font-size: 16px;
+        text-decoration: none;
+        background-image: url(../images/arrow.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+    #logo-sp {}
+    #nav-sp a:link,
+    #nav-sp a:visited,
+    #nav-sp a:active {
+        color: #ffffff;
+    }
+    #nav-sp a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    .countries-pics {
+        display: flex;
+        justify-content: center;
+    }
+    .cpic {}
+
+    .types-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sns-icon img {
+        max-width: 50px;
+        padding: 0 auto;
+    }
+
+/*パソコン*/
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    #nav-pc {
+        float: right;
+        top: 30px;
+        right: 20px;
+        display: block;
+    }
+    #nav-sp {
+        display: none;
+    }
+    #nav-sp ul {
+        display: none;
+    }
+    #nav-sp li {
+        list-style: none;
+    }
+    #nav-pc a:link, 
+    #nav-pc a:visited,
+    #nav-pc a:active {
+      color: #0d0d0d;
+    }
+    #menu-sp {
+        display: none;
+    }
+    #nav-pc > a {
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    #nav-pc > a:active {
+        color: #d0d0d0;
+    }
+    #nav-pc > a:active {
+        color: #d0d0d0;
+    }
+    body {
+        color: #666961;
+        font-family: "セザンヌ";
+        max-width: 1080px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 18px;
+        /* align-items: center; */
+    }
+    .countries-pics {
+        display: flex;
+        justify-content: center;
+    }
+    .cpic {}
+    .countries-pics {
+        display: flex;
+        justify-content: center;
+    }
+    .cpic {}
+
+    .types-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .types-each {}
+    #sns-icon img {
+        max-width: 30px;
+        padding: 0 auto;
+    }
+}
+  
